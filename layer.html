@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>페이지제목</title>
+    <meta property="og:type" content="페이지유형">
+    <meta property="og:site_name" content="사이트의 이름">
+    <meta property="og:title" content="페이지 이름">
+    <meta property="og:description" content="페이지 설명">
+    <meta property="og:image" content="페이지 대표이미지">
+    <meta property="og:url" content="페이지 주소">
+    <style>
+        /* @layer 레이어명, 레이어명,  레이어명;
+            제일작음 >>> 제일 큼 */
+        @layer ResetBasic, Reset, Block, Utility, Utility.Colors, Utility.Spacing;
+
+        @import url(./css/reset.css) layer(Reset.ResetBasic);
+
+        @layer Reset{
+            *{
+                margin:0;
+                padding:0;
+            }
+        }
+        @layer Utility {
+            @layer Spacing{
+                .mt20 {
+                    margin-top: 20px;
+                }
+            }
+            @layer Colors{
+                .text-primary{
+                    color:orange;
+                }
+            }
+        }
+        @layer Block {
+            .block {
+                border: 2px solid red;
+                padding: 10px;
+                margin-top: 5px;
+            }
+        }
+        /* :is(div, p, .block, #a) {
+          background-color: orange;
+        }
+        :where(div, p) {
+          background-color: tomato;
+        } */
+      </style>
+</head>
+<body>
+    <div class="block">text</div>
+    <p class="block mt20">text</p>
+</body>
+</html>

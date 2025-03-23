@@ -1,0 +1,22 @@
+.pipe-type1 {
+  --width: 0.1rem;
+  --height: 1.4rem;
+  --marginX: 1.2rem;
+  --bg: var(--red300);
+
+  display: flex;
+  align-items: center;
+  > * {
+    display: flex;
+    align-items: center;
+    + * {
+      &::before {
+        content: '';
+        width: var(--width);
+        height: var(--height);
+        margin-inline: var(--marginX);
+        background: var(--bg);
+      }
+    }
+  }
+}
