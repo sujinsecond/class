@@ -56,7 +56,7 @@ const css = () => {
     }
     .copy {
       position:relative;
-      border:2px dashed gray;
+      border:1px dashed gray;
       padding:1rem;
       margin-block:2rem 3rem;
       min-height:1rem;

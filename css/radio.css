@@ -9,6 +9,7 @@
 
   display: inline-flex;
   align-items: center;
+  /* margin-right: 3rem; 라디오 버튼 사이의 간격 */
 
   input {
     position: absolute;
@@ -38,3 +39,14 @@
     align-content: center;
   }
 }
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}
+
+/* .radio-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+} */

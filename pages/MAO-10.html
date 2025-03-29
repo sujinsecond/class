@@ -1,45 +1,35 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
-    <title>formgroup</title>
+    <title>과정소개</title>
     <meta property="og:type" content="페이지유형" />
     <meta property="og:site_name" content="사이트의 이름" />
     <meta property="og:title" content="페이지 이름" />
     <meta property="og:description" content="페이지 설명" />
     <meta property="og:image" content="페이지 대표이미지" />
     <meta property="og:url" content="페이지 주소" />
-    <meta property="og:url" content="페이지 주소" />
     <link rel="stylesheet" href="../css/style.css" />
-    <script type="module" src="./js/clipBoard.js"></script>
+    <script type="module" src="../js/global.js"></script>
   </head>
   <body>
-    <div class="copy">
-      <div class="tel">
-        <select class="select">
-          <option>010</option>
-        </select>
-        <input type="tel" class="text-field" />
-        <input type="tel" class="text-field" />
+    <header class="header">
+      <div>
+        <button class="icon-button">
+          <img src="/images/ico_prev_primary.svg" alt="이전" />
+        </button>
       </div>
-    </div>
-    <div class="copy">
-      <div class="address">
-        <input type="number" class="text-field" />
-        <button class="btn sm lightgray-outline">우편번호찾기</button>
-        <input type="text" class="text-field" />
-        <input type="text" class="text-field" placeholder="상세주소를 입력하세요" />
+      <h1>수강신청</h1>
+      <div></div>
+    </header>
+    <main>
+      <div class="title-area">
+        <div class="box"></div>
+        <h2>신청자정보</h2>
       </div>
-    </div>
-    <div class="copy">
-      <div class="field-area">
-        <label for="name-input" class="text-lg">이름</label>
-        <input type="text" id="name-input" class="text-field" />
-      </div>
-    </div>
-    <div class="copy">
+
       <div class="form-area">
         <div class="field-area">
           <label for="name-input" class="text-lg">이름</label>
@@ -55,27 +45,24 @@
             <select class="select">
               <option>010</option>
             </select>
-            <input type="tel" tel-input class="text-field" />
-            <input type="tel" tel-input class="text-field" />
+            <input type="tel" tel-input="" class="text-field" />
+            <input type="tel" tel-input="" class="text-field" />
           </div>
         </div>
       </div>
-    </div>
-    <div class="copy">
+
       <div class="title-area">
         <div class="box"></div>
-        <h2>신청자정보</h2>
+        <h2>교재 배송지 정보</h2>
       </div>
-    </div>
 
-    <div class="copy">
       <div class="field-area">
         <label for="address-input" class="text-lg">주소</label>
         <div class="address-container">
           <!-- 라디오 버튼 그룹 -->
           <div class="radio-group">
             <div class="radio">
-              <input type="radio" name="address-type" checked id="radio1" />
+              <input type="radio" name="address-type" checked="" id="radio1" />
               <label for="radio1">최근배송지</label>
             </div>
             <div class="radio">
@@ -98,14 +85,13 @@
           </div>
           <!-- 체크박스 -->
           <div class="checkbox">
-            <input type="checkbox" checked id="check1" /><label for="check1"
+            <input type="checkbox" checked="" id="check1" /><label for="check1"
               >기본배송지정보에 반영합니다.</label
             >
           </div>
         </div>
       </div>
-    </div>
-    <div class="copy">
+
       <div class="field-area">
         <label for="address-input" class="text-lg">요청사항</label>
         <div class="address-container">
@@ -130,6 +116,10 @@
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="btn-group2 fixed">
+        <button class="btn md primary ico1">수강신청</button>
+      </div>
+    </main>
   </body>
 </html>
