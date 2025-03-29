@@ -21,10 +21,17 @@
 @import url(./chip.css) layer(molecules.chip);
 @import url(./floatingLabel.css) layer(molecules.floatingLabel);
 @import url(./date.css) layer(molecules.date);
-@import url(./pipe.css) layer(molecules.pipe);
+@import url(./pipe.css) layer(molecules.pipe); /*새로 생성*/
+@import url(./tab.css) layer(molecules.tab); /*새로 생성*/
 
 /* 유기체 */
 @import url(./table.css) layer(organisms.table);
+@import url(./information.css) layer(organisms.information); /*새로 생성*/
+@import url(./header.css) layer(organisms.header); /*새로 생성*/
+@import url(./footer.css) layer(organisms.footer); /*새로 생성*/
+@import url(./tag.css) layer(organisms.tag); /*새로 생성*/
+@import url(./formgroup.css) layer(organisms.formgroup); /*새로 생성*/
+@import url(./buttongroup.css) layer(organisms.buttongroup); /*새로 생성*/
 
 /* 템플릿 */
 /* 페이지 */

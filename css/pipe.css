@@ -20,3 +20,28 @@
     }
   }
 }
+
+.pipe-type2 {
+  --width: 0.6rem;
+  --height: 1.1rem;
+  --marginX: 0.8rem;
+  --bg: url(../images/ico_pipe2.svg) no-repeat center / contain;
+
+  display: flex;
+  align-items: center;
+
+  > * {
+    display: flex;
+    align-items: center;
+
+    + * {
+      &::before {
+        content: '';
+        width: var(--width);
+        height: var(--height);
+        margin-inline: var(--marginX);
+        background: var(--bg);
+      }
+    }
+  }
+}

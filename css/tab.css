@@ -1,0 +1,24 @@
+.tab-type1 {
+  display: flex;
+  > li {
+    flex: 1;
+  }
+  button {
+    width: 100%;
+    padding-block: 1.4rem;
+    font-size: 1.9rem;
+    color: var(--gray900);
+    line-height: 1;
+    letter-spacing: -0.05rem;
+    border-bottom: 0.2rem solid var(--gray200);
+  }
+  .active {
+    button {
+      color: var(--primary);
+      font-weight: 700;
+      border-color: var(--primary);
+    }
+  }
+}
+
+/*비활성을 먼저, 활성 나중*/
