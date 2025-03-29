@@ -55,6 +55,6 @@ b {
 
 .link {
   text-decoration: underline 2px;
-  text-decoration-color: red;
+  text-decoration-color: var(--primary);
   text-underline-offset: 3px;
 }
