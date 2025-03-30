@@ -17,6 +17,6 @@
   }
   .pipe-type1 {
     color: var(--white);
-    font-size: var(--font-sm);
+    font-size: var(--font-);
   }
 }
