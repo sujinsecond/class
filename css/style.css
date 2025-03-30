@@ -32,6 +32,7 @@
 @import url(./tag.css) layer(organisms.tag); /*새로 생성*/
 @import url(./formgroup.css) layer(organisms.formgroup); /*새로 생성*/
 @import url(./buttongroup.css) layer(organisms.buttongroup); /*새로 생성*/
+@import url(./list.css) layer(organisms.list); /*새로 생성*/
 
 /* 템플릿 */
 /* 페이지 */

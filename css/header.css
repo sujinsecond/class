@@ -53,6 +53,7 @@
 
 .title-area2 {
   display: flex;
+  justify-content: space-between;
   gap: 1rem;
   align-items: center;
   border-bottom: 0.1rem solid var(--gray500);
