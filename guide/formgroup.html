@@ -16,6 +16,15 @@
     <script type="module" src="./js/clipBoard.js"></script>
   </head>
   <body>
+    <!--title-->
+    <div class="copy">
+      <div class="title-area">
+        <div class="box"></div>
+        <h2>신청자정보</h2>
+      </div>
+    </div>
+
+    <!--2.tel-->
     <div class="copy">
       <div class="tel">
         <select class="select">
@@ -25,6 +34,8 @@
         <input type="tel" class="text-field" />
       </div>
     </div>
+
+    <!--3.address-->
     <div class="copy">
       <div class="address">
         <input type="number" class="text-field" />
@@ -33,49 +44,26 @@
         <input type="text" class="text-field" placeholder="상세주소를 입력하세요" />
       </div>
     </div>
+
+    <!--4.profile-->
     <div class="copy">
-      <div class="field-area">
+      <div class="field-area1">
         <label for="name-input" class="text-lg">이름</label>
         <input type="text" id="name-input" class="text-field" />
       </div>
+      <!--field-area-->
     </div>
-    <div class="copy">
-      <div class="form-area">
-        <div class="field-area">
-          <label for="name-input" class="text-lg">이름</label>
-          <input type="text" id="name-input" class="text-field" />
-        </div>
-        <div class="field-area">
-          <label for="email-input" class="text-lg">이메일</label>
-          <input type="email" id="email-input" class="text-field" />
-        </div>
-        <div class="field-area">
-          <label for="tel-input" class="text-lg">휴대전화</label>
-          <div class="tel">
-            <select class="select">
-              <option>010</option>
-            </select>
-            <input type="tel" tel-input class="text-field" />
-            <input type="tel" tel-input class="text-field" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="copy">
-      <div class="title-area">
-        <div class="box"></div>
-        <h2>신청자정보</h2>
-      </div>
-    </div>
+    <!--copy-->
 
+    <!--5th-->
     <div class="copy">
-      <div class="field-area">
+      <div class="field-area2">
         <label for="address-input" class="text-lg">주소</label>
         <div class="address-container">
-          <!-- 라디오 버튼 그룹 -->
+          <!-- 1.라디오 버튼 그룹 -->
           <div class="radio-group">
             <div class="radio">
-              <input type="radio" name="address-type" checked id="radio1" />
+              <input type="radio" name="address-type" checked="" id="radio1" />
               <label for="radio1">최근배송지</label>
             </div>
             <div class="radio">
@@ -87,46 +75,20 @@
               <label for="radio3">기본배송지</label>
             </div>
           </div>
-          <!-- 주소 입력 필드 -->
+
+          <!-- 2.주소 입력 필드 -->
           <div class="address">
-            <div class="zip-code-row">
-              <input type="number" class="text-field" id="zip-code" />
-              <button class="btn sm lightgray-outline">우편번호찾기</button>
-            </div>
+            <input type="number" class="text-field" />
+            <button class="btn sm lightgray-outline">우편번호찾기</button>
             <input type="text" class="text-field" />
             <input type="text" class="text-field" placeholder="상세주소를 입력하세요" />
           </div>
-          <!-- 체크박스 -->
+
+          <!-- 3.체크박스 -->
           <div class="checkbox">
-            <input type="checkbox" checked id="check1" /><label for="check1"
+            <input type="checkbox" checked="" id="check1" /><label for="check1"
               >기본배송지정보에 반영합니다.</label
             >
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="copy">
-      <div class="field-area">
-        <label for="address-input" class="text-lg">요청사항</label>
-        <div class="address-container">
-          <select class="select">
-            <option>배송시 요청사항 선택</option>
-          </select>
-          <div class="comment">
-            부재시 연락가능한 번호나 수령장소 등을 적어주세요 (한글 30자 이내)
-          </div>
-          <!-- 체크박스 -->
-          <div class="checkbox">
-            <input type="checkbox" id="check1" /><label for="check1"
-              >기본배송지정보에 반영합니다.</label
-            >
-          </div>
-          <div class="comment">
-            (목적 : 교재배송 및 취소교재 회수 / 보유기간 : 회원탈퇴 시까지 / 항목 : 이름, 연락처,
-            주소)
-          </div>
-          <div class="comment">
-            개인정보 수집 및 이용에 거부하실 수 있으며, 거부하시는 경우 수강신청을 하실 수 없습니다.
           </div>
         </div>
       </div>
