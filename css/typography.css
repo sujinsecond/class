@@ -1,41 +1,41 @@
 .text-xs {
   color: var(--color, var(--gray850));
-  font-size: var(--fs, var(--font-xs));
+  font-size: var(--fs, var(--font-xs)); /*1.1rem*/
   line-height: var(--lh, var(--lh-xs));
   letter-spacing: var(--ls, var(--ls-xs));
   font-weight: var(--fw, 400);
 }
 .text-sm {
   color: var(--color, var(--gray850));
-  font-size: var(--fs, var(--font-sm));
+  font-size: var(--fs, var(--font-sm)); /*1.2rem*/
   line-height: var(--lh, var(--lh-sm));
   letter-spacing: var(--ls, var(--ls-sm));
   font-weight: var(--fw, 400);
 }
 .text-base {
   color: var(--color, var(--gray850));
-  font-size: var(--fs, var(--font-base));
+  font-size: var(--fs, var(--font-base)); /*1.4rem*/
   line-height: var(--lh, var(--lh-base));
   letter-spacing: var(--ls, var(--ls-base));
   font-weight: var(--fw, 400);
 }
 .text-md {
   color: var(--color, var(--gray850));
-  font-size: var(--fs, var(--font-md));
+  font-size: var(--fs, var(--font-md)); /*1.6rem*/
   line-height: var(--lh, var(--lh-md));
   letter-spacing: var(--ls, var(--ls-md));
   font-weight: var(--fw, 400);
 }
 .text-lg {
   color: var(--color, var(--gray850));
-  font-size: var(--fs, var(--font-lg));
+  font-size: var(--fs, var(--font-lg)); /*2rem*/
   line-height: var(--lh, var(--lh-lg));
   letter-spacing: var(--ls, var(--ls-lg));
   font-weight: var(--fw, 400);
 }
 .text-xl {
   color: var(--color, var(--gray850));
-  font-size: var(--fs, var(--font-xl));
+  font-size: var(--fs, var(--font-xl)); /*2.4rem*/
   line-height: var(--lh, var(--lh-xl));
   letter-spacing: var(--ls, var(--ls-xl));
   font-weight: var(--fw, 400);
@@ -55,10 +55,10 @@ b {
 
 /* 폰트 두께 클래스 추가 - Noto Sans KR (100~900) */
 .weight-100 {
-  font-weight: 100; /* Thin */
+  font-weight: var(--fw-thin); /* Thin */
 }
 .weight-200 {
-  font-weight: 200; /* Extra Light */
+  font-weight: var(--fw-extralight); /* Extra Light */
 }
 .weight-300 {
   font-weight: 300; /* Light */
