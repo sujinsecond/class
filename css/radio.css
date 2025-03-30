@@ -1,6 +1,6 @@
 .radio {
-  --offImage: url(/images/ico_radio_off.svg);
-  --onImage: url(/images/ico_radio_on.svg);
+  --offImage: url(../images/ico_radio_off.svg);
+  --onImage: url(../images/ico_radio_on.svg);
   --fontSize: 15px;
   --beforeColor: var(--gray700);
   --afterColor: var(--gray700);
