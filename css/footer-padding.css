@@ -1,0 +1,10 @@
+/* footer가 없는 경우 body에 하단 여백 추가 */
+/* :has() 선택자는 해당 요소 내에 특정 요소가 있는지 확인하는 선택자 */
+/* :not() 선택자와 함께 사용하여 footer가 없는 경우를 확인 */
+body:not(:has(.footer)) {
+  padding-bottom: 50px; /* footer가 없을 때 하단 여백 50px 추가 */
+}
+
+/* body:has(.btn-group2.fixed) main {
+  padding-bottom: 80px;
+} */

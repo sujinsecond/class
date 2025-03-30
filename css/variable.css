@@ -33,8 +33,8 @@
   --red600: #b9131e; */
   --red500: #f93232;
   /* --red400: #ec4651; */
-  --red300: #FF6A13;
- /* --red200: #f5a3a8;
+  --red300: #ff6a13;
+  /* --red200: #f5a3a8;
   --red100: #fbd6d8; */
 
   /* --yellow900: #4d370b;
@@ -53,7 +53,7 @@
   --green600: #008a1e;
   --green500: #33a14b;
   --green400: #8cca99; */
-  --green300: #09E27C;
+  --green300: #09e27c;
   /*--green200: #cee9d4;
   --green100: #eef7f0; */
 
@@ -63,8 +63,8 @@
   --blue600: #1d56bc; */
   --blue500: #1d4ed8;
   /* -blue400: #5089ef; */
-   --blue300: #00D4EA;
-    /* ---blue200: #a7c4f7;
+  --blue300: #00d4ea;
+  /* ---blue200: #a7c4f7;
   --blue100: #d3e1fb; */
 
   --primary: var(--blue500);
@@ -86,5 +86,16 @@
 
   --ls-sm: -0.02rem;
   --ls-base: 0;
-  --ls-md: 0.01rem; 
+  --ls-md: 0.01rem;
+
+  /* 폰트 두께 변수 추가 - Noto Sans KR */
+  --fw-thin: 100;
+  --fw-extralight: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
 }

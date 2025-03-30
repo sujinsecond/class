@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -86,7 +86,7 @@
         </div>
       </div>
 
-      <div class="grid-divide-4 align vt mt12 mx16 gap1-2">
+      <div class="grid-divide-4 align vt mt24 mx16 gap1-2 mb80">
         <label for="address-input" class="text-lg">요청사항</label>
         <div class="grid gap1-2">
           <select class="select">
@@ -97,7 +97,7 @@
           </div>
           <!-- 체크박스 -->
           <div class="checkbox">
-            <input type="checkbox" id="check1" /><label for="check1"
+            <input type="checkbox" id="check2" /><label for="check1"
               >기본배송지정보에 반영합니다.</label
             >
           </div>
@@ -115,5 +115,6 @@
         <button class="btn md primary ico1">수강신청</button>
       </div>
     </main>
+    <!-- Footer 없음 - 여기에 body:not(:has(.footer)) 선택자가 작동하여 하단 여백 50px 적용 -->
   </body>
 </html>

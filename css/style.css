@@ -33,6 +33,7 @@
 @import url(./formgroup.css) layer(organisms.formgroup); /*새로 생성*/
 @import url(./buttongroup.css) layer(organisms.buttongroup); /*새로 생성*/
 @import url(./list.css) layer(organisms.list); /*새로 생성*/
+@import url(./footer-padding.css) layer(utillity); /*footer 여백 규칙 추가, 새로 생성 */
 
 /* 템플릿 */
 /* 페이지 */

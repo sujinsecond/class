@@ -27,3 +27,4 @@ const blockFixed = (selector, direction) => {
   
 //   blockFixed(선택자, 위치);
 blockFixed('.btn-group.fixed', 'bottom');
+blockFixed('.btn-group2.fixed', 'bottom');
