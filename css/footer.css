@@ -11,4 +11,12 @@
   .pipe-type1 {
     justify-self: center;
   }
+  .copyright {
+    color: var(--white);
+    font-size: var(--font-xs);
+  }
+  .pipe-type1 {
+    color: var(--white);
+    font-size: var(--font-sm);
+  }
 }
