@@ -51,6 +51,9 @@ b {
   &[class*='text-'] {
     font-weight: var(--fw, 700);
   }
+  /* &[class*='text-']:not([class*='weight-']) {
+    font-weight: var(--fw, 700);
+  } */
 }
 
 /* 폰트 두께 클래스 추가 - Noto Sans KR (100~900) */
@@ -61,25 +64,25 @@ b {
   font-weight: var(--fw-extralight); /* Extra Light */
 }
 .weight-300 {
-  font-weight: 300; /* Light */
+  font-weight: var(--fw-light); /* Light */
 }
 .weight-400 {
-  font-weight: 400; /* Regular */
+  font-weight: var(--fw-regular); /* Regular */
 }
 .weight-500 {
-  font-weight: 500; /* Medium */
+  font-weight: var(--fw-medium); /* Medium */
 }
 .weight-600 {
-  font-weight: 600; /* Semi Bold */
+  font-weight: var(--fw-semibold); /* Semi Bold */
 }
 .weight-700 {
-  font-weight: 700; /* Bold */
+  font-weight: var(--fw-bold); /* Bold */
 }
 .weight-800 {
-  font-weight: 800; /* Extra Bold */
+  font-weight: var(--fw-extrabold); /* Extra Bold */
 }
 .weight-900 {
-  font-weight: 900; /* Black */
+  font-weight: var(--fw-black); /* Black */
 }
 
 .link {
