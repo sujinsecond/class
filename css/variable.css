@@ -73,13 +73,14 @@
   /* --success: var(--green600); */
 
   --font-xxs: 1rem;
-  --font-xs: 1.1rem;
+  --font-xs: 1.1rem; /* 기본적으로 typography.css의 text-xs에 넘어간다.*/
   --font-sm: 1.2rem;
   --font-base: 1.4rem;
   --font-md: 1.6rem;
   --font-lg: 2rem;
   --font-xl: 2.4rem;
 
+  --lh-xs: 1.1;
   --lh-sm: 1.2;
   --lh-base: 1.5;
   --lh-md: 1.8;
