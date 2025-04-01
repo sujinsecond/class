@@ -1,0 +1,53 @@
+.banner {
+  width: calc(100% - 3.2rem); /* 양쪽 여백 각 1.6rem을 제외한 너비 */
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.banner a {
+  display: block;
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* .banner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.banner a {
+  display: block;
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: contain;
+} */
+/* 
+.banner {
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.banner a {
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+} */
