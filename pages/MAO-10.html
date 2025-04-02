@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
+    <meta name="description" content="비즈니스 매너 향상을 위한 온라인 교육 과정. 직장 생활에 필요한 필수 매너를 배워 성공적인 직장인으로 성장하세요." />
     <title>과정소개</title>
     <meta property="og:type" content="페이지유형" />
     <meta property="og:site_name" content="사이트의 이름" />
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <script type="module" src="../js/global.js"></script>
   </head>
+
   <body>
     <header class="header">
       <div>
@@ -26,94 +27,96 @@
     </header>
 
     <main>
-      <div class="title-area1 mt24 mx16">
-        <div class="box"></div>
-        <h2>신청자정보</h2>
-      </div>
+      <form>
+        <fieldset>
+          <legend class="visually-hidden">신청자정보</legend>
 
-      <div class="grid-divide-4 align vm mt12 mx16 gap1-2">
-        <label for="name-input" class="text-lg">이름</label>
-        <input type="text" id="name-input" class="text-field" />
-        <label for="email-input" class="text-lg">이메일</label>
-        <input type="email" id="email-input" class="text-field" />
-        <label for="tel-input" class="text-lg">휴대전화</label>
-        <div class="tel">
-          <select class="select">
-            <option>010</option>
-          </select>
-          <input type="tel" class="text-field" />
-          <input type="tel" class="text-field" />
-        </div>
-      </div>
+          <div class="title-area1 mt24 mx16">
+            <div class="box"></div>
+            <h2>신청자정보</h2>
+          </div>
 
-      <div class="title-area1 mt48 mx16">
-        <div class="box"></div>
-        <h2>교재 배송지 정보</h2>
-      </div>
+          <div class="grid-divide-4 align vm mt12 mx16 gap1-2">
+            <label for="name-input" class="text-lg">이름</label>
+            <input type="text" id="name-input" class="text-field" />
+            <label for="email-input" class="text-lg">이메일</label>
+            <input type="email" id="email-input" class="text-field" />
 
-      <div class="grid-divide-4 align vt mt12 mx16 gap1-2">
-        <label for="address-input" class="text-lg">주소</label>
-        <div class="grid gap1-2">
-          <!-- 1.라디오 버튼 그룹 -->
-          <div class="radio-group">
-            <div class="radio">
-              <input type="radio" name="address-type" checked="" id="radio1" />
-              <label for="radio1">최근배송지</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="address-type" id="radio2" />
-              <label for="radio2">신규배송지</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="address-type" id="radio3" />
-              <label for="radio3">기본배송지</label>
+            <!--휴대전화-->
+            <label for="tel-input" class="text-lg">휴대전화</label>
+            <!--tel 이라는 그룹 만들었다.-->
+            <div class="tel">
+              <label for="tel-input" class="visually-hidden">전화번호 앞자리</label>
+              <select class="select" id="tel-input">
+                <option>010</option>
+              </select>
+              <label for="tel-middle" class="visually-hidden">전화번호 중간자리</label>
+              <input type="tel" class="text-field" id="tel-middle" />
+              <label for="tel-last" class="visually-hidden">전화번호 뒷자리</label>
+              <input type="tel" class="text-field" id="tel-last" />
             </div>
           </div>
-          <!-- 2.주소 입력 필드 -->
-          <div class="address">
-            <input type="number" class="text-field" />
-            <button class="btn sm lightgray-outline">우편번호찾기</button>
-            <input type="text" class="text-field" />
-            <input type="text" class="text-field" placeholder="상세주소를 입력하세요" />
+        </fieldset>
+
+        <!-- 교재 배송지 정보 -->
+        <fieldset>
+          <legend class="visually-hidden">교재 배송지 정보</legend>
+
+          <div class="title-area1 mt48 mx16">
+            <div class="box"></div>
+            <h2>교재 배송지 정보</h2>
           </div>
 
-          <!-- 3.체크박스 -->
-          <div class="checkbox">
-            <input type="checkbox" checked="" id="check1" /><label for="check1"
-              >기본배송지정보에 반영합니다.</label
-            >
+          <div class="grid-divide-4 align vt mt12 mx16 gap1-2">
+            <label for="postal-code" class="text-lg">주소</label>
+            <div class="grid gap1-2">
+              <!-- 1.라디오 버튼 그룹 -->
+              <div class="radio-group">
+                <div class="radio">
+                  <input type="radio" name="address-type" checked="" id="radio1" />
+                  <label for="radio1">최근배송지</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="address-type" id="radio2" />
+                  <label for="radio2">신규배송지</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="address-type" id="radio3" />
+                  <label for="radio3">기본배송지</label>
+                </div>
+              </div>
+              <!-- 2.주소 입력 필드 -->
+              <div class="address">
+                <input type="number" class="text-field" id="postal-code" />
+                <button class="btn sm lightgray-outline">우편번호찾기</button>
+                <input type="text" class="text-field" id="address-base" />
+                <input type="text" class="text-field" placeholder="상세주소를 입력하세요" id="address-detail" />
+              </div>
+
+              <!-- 3.체크박스 -->
+              <div class="checkbox"><input type="checkbox" checked="" id="check1" /><label for="check1">기본배송지정보에 반영합니다.</label></div>
+            </div>
           </div>
+
+          <div class="grid-divide-4 align vt mt24 mx16 gap1-2 mb80">
+            <label for="request-select" class="text-lg">요청사항</label>
+            <div class="grid gap1-2">
+              <select class="select" id="request-select">
+                <option>배송시 요청사항 선택</option>
+              </select>
+              <div class="comment text-sm">부재시 연락가능한 번호나 수령장소 등을 적어주세요 (한글 30자 이내)</div>
+              <!-- 체크박스 -->
+              <div class="checkbox text-sm weight-500"><input type="checkbox" id="check2" /><label for="check2">기본배송지정보에 반영합니다.</label></div>
+              <div class="comment text-sm weight-500">(목적 : 교재배송 및 취소교재 회수 / 보유기간 : 회원탈퇴 시까지 / 항목 : 이름, 연락처, 주소)</div>
+              <div class="comment text-sm weight-500">개인정보 수집 및 이용에 거부하실 수 있으며, 거부하시는 경우 수강신청을 하실 수 없습니다.</div>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="btn-group2 fixed">
+          <button class="btn md primary ico1">수강신청</button>
         </div>
-      </div>
-
-      <div class="grid-divide-4 align vt mt24 mx16 gap1-2 mb80">
-        <label for="address-input" class="text-lg">요청사항</label>
-        <div class="grid gap1-2">
-          <select class="select">
-            <option>배송시 요청사항 선택</option>
-          </select>
-          <div class="comment text-sm">
-            부재시 연락가능한 번호나 수령장소 등을 적어주세요 (한글 30자 이내)
-          </div>
-          <!-- 체크박스 -->
-          <div class="checkbox text-sm weight-500">
-            <input type="checkbox" id="check2" /><label for="check2"
-              >기본배송지정보에 반영합니다.</label
-            >
-          </div>
-          <div class="comment text-sm weight-500">
-            (목적 : 교재배송 및 취소교재 회수 / 보유기간 : 회원탈퇴 시까지 / 항목 : 이름, 연락처,
-            주소)
-          </div>
-          <div class="comment text-sm weight-500">
-            개인정보 수집 및 이용에 거부하실 수 있으며, 거부하시는 경우 수강신청을 하실 수 없습니다.
-          </div>
-        </div>
-      </div>
-
-      <div class="btn-group2 fixed">
-        <button class="btn md primary ico1">수강신청</button>
-      </div>
+      </form>
     </main>
     <!-- Footer 없음 - 여기에 body:not(:has(.footer)) 선택자가 작동하여 하단 여백 50px 적용 -->
   </body>

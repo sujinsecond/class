@@ -19,21 +19,24 @@
     <!--1.tel-->
     <div class="copy">
       <div class="tel">
-        <select class="select">
+        <label for="tel-input" class="visually-hidden">전화번호 앞자리</label>
+        <select class="select" id="tel-input">
           <option>010</option>
         </select>
-        <input type="tel" class="text-field" />
-        <input type="tel" class="text-field" />
+        <label for="tel-middle" class="visually-hidden">전화번호 중간자리</label>
+        <input type="tel" class="text-field" id="tel-middle" />
+        <label for="tel-last" class="visually-hidden">전화번호 뒷자리</label>
+        <input type="tel" class="text-field" id="tel-last" />
       </div>
     </div>
 
     <!--2.address-->
     <div class="copy">
       <div class="address">
-        <input type="number" class="text-field" />
+        <input type="number" class="text-field" id="postal-code" />
         <button class="btn sm lightgray-outline">우편번호찾기</button>
-        <input type="text" class="text-field" />
-        <input type="text" class="text-field" placeholder="상세주소를 입력하세요" />
+        <input type="text" class="text-field" id="address-base" />
+        <input type="text" class="text-field" placeholder="상세주소를 입력하세요" id="address-detail" />
       </div>
     </div>
 
@@ -69,18 +72,14 @@
 
           <!-- 2.주소 입력 필드 -->
           <div class="address">
-            <input type="number" class="text-field" />
+            <input type="number" class="text-field" id="postal-code" />
             <button class="btn sm lightgray-outline">우편번호찾기</button>
-            <input type="text" class="text-field" />
-            <input type="text" class="text-field" placeholder="상세주소를 입력하세요" />
+            <input type="text" id="address-base" class="text-field" />
+            <input type="text" id="address-detail" class="text-field" placeholder="상세주소를 입력하세요" />
           </div>
 
           <!-- 3.체크박스 -->
-          <div class="checkbox">
-            <input type="checkbox" checked="" id="check1" /><label for="check1"
-              >기본배송지정보에 반영합니다.</label
-            >
-          </div>
+          <div class="checkbox"><input type="checkbox" checked="" id="check1" /><label for="check1">기본배송지정보에 반영합니다.</label></div>
         </div>
       </div>
     </div>
