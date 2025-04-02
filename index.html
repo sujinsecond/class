@@ -19,7 +19,7 @@
             <li><span class="state m"></span></li>
             <li>모바일&nbsp;&nbsp;&nbsp;/</li>
             <li>상태 :</li>
-            <li><span class="state end"></span></li>
+            <li><span class="state modify"></span></li>
             <li>완료</li>
             <li><span class="state ing"></span></li>
             <li>진행중&nbsp;&nbsp;&nbsp;/</li>
@@ -82,13 +82,13 @@
             <tr class="list">
               <td>상세보기 > 과정소개</td>
               <td><a href="./pages/MAO-07.html" target="_blank">MAO-07.html</a></td>
-              <td>2025.03.29</td>
-              <td>2025.04.02</td>
+              <td>2025.03.30</td>
+              <td>2025.04.04</td>
               <td>x</td>
               <td>x</td>
               <td>x</td>
               <td><span class="state m"></span></td>
-              <td><span class="state end"></span></td>
+              <td><span class="state modify"></span></td>
               <td>
                 <p class="t_em"></p>
               </td>
@@ -97,12 +97,12 @@
               <td>상세보기 > 수강신청</td>
               <td><a href="./pages/MAO-10.html" target="_blank">MAO-10.html</a></td>
               <td>2025.03.29</td>
-              <td>2025.04.02</td>
+              <td>2025.04.04</td>
               <td>x</td>
               <td>x</td>
               <td>x</td>
               <td><span class="state m"></span></td>
-              <td><span class="state end"></span></td>
+              <td><span class="state modify"></span></td>
               <td>
                 <p class="t_em"></p>
               </td>
@@ -111,12 +111,12 @@
               <td>상세보기 > 기본게시판</td>
               <td><a href="./pages/MMA-06.html" target="_blank">MMA-06.html</a></td>
               <td>2025.03.30</td>
-              <td>2025.04.02</td>
+              <td>2025.04.04</td>
               <td>x</td>
               <td>x</td>
               <td>x</td>
               <td><span class="state m"></span></td>
-              <td><span class="state end"></span></td>
+              <td><span class="state modify"></span></td>
               <td>
                 <p class="t_em"></p>
               </td>
@@ -125,12 +125,12 @@
               <td>상세보기 > 공지사항</td>
               <td><a href="./pages/MAJ-02.html" target="_blank">MAJ-02.html</a></td>
               <td>2025.03.30</td>
-              <td>2025.04.02</td>
+              <td>2025.04.04</td>
               <td>x</td>
               <td>x</td>
               <td>x</td>
               <td><span class="state m"></span></td>
-              <td><span class="state end"></span></td>
+              <td><span class="state modify"></span></td>
               <td>
                 <p class="t_em"></p>
               </td>
@@ -139,12 +139,12 @@
               <td>상세보기 > 시험</td>
               <td><a href="./pages/MMA-30.html" target="_blank">MMA-30.html</a></td>
               <td>2025.03.31</td>
-              <td>2025.04.02</td>
+              <td>2025.04.04</td>
               <td>x</td>
               <td>x</td>
               <td>x</td>
               <td><span class="state m"></span></td>
-              <td><span class="state end"></span></td>
+              <td><span class="state modify"></span></td>
               <td>
                 <p class="t_em"></p>
               </td>
@@ -153,12 +153,12 @@
               <td>상세보기 > 상담내역</td>
               <td><a href="./pages/MAJ-05.html" target="_blank">MAJ-05.html</a></td>
               <td>2025.03.31</td>
-              <td>2025.04.02</td>
+              <td>2025.04.04</td>
               <td>x</td>
               <td>x</td>
               <td>x</td>
               <td><span class="state m"></span></td>
-              <td><span class="state end"></span></td>
+              <td><span class="state modify"></span></td>
               <td>
                 <p class="t_em"></p>
               </td>
@@ -432,7 +432,7 @@
           }
         }
 
-        &.end {
+        &.modify {
           background-color: #eb3b5a;
           font-weight: bold;
 
@@ -530,7 +530,7 @@
       const graph = document.querySelector('#progress em');
       const graphTotal = document.querySelector('#total');
       const total = content.querySelectorAll('.list').length;
-      const finish = content.querySelectorAll('.list .end').length;
+      const finish = content.querySelectorAll('.list .modify').length;
       const progress = Math.floor((finish / total) * 100);
       graph.style.width = progress + '%';
       graphTotal.innerHTML = `
