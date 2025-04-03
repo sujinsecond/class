@@ -58,7 +58,7 @@
   align-items: center;
   border-bottom: 0.1rem solid var(--gray500);
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 
   .border {
     width: 100%;
