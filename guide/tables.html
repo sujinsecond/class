@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -66,9 +66,40 @@
     <p>개별 셀에 기능이 일부 포함된 테이블 디자인. 예: 특정 셀에 버튼, 링크, 드롭다운 포함</p>
     <div class="copy"></div>
     <h2>Composite Table</h2>
-    <p>
-      다른 분자(Molecule)와 조합된 테이블 디자인. 예: 검색 바 + 필터 + 페이지네이션 + 정렬 기능 포함
-    </p>
-    <div class="copy"></div>
+    <p>다른 분자(Molecule)와 조합된 테이블 디자인. 예: 검색 바 + 필터 + 페이지네이션 + 정렬 기능 포함</p>
+    <!--4.address-->
+    <div class="copy">
+      <div class="grid-divide-4 align vt gap1-2">
+        <label for="address-input" class="text-lg">주소</label>
+        <div class="grid gap1-2">
+          <!-- 1.라디오 버튼 그룹 -->
+          <div class="radio-group">
+            <div class="radio">
+              <input type="radio" name="address-type" checked="" id="radio1" />
+              <label for="radio1">최근배송지</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="address-type" id="radio2" />
+              <label for="radio2">신규배송지</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="address-type" id="radio3" />
+              <label for="radio3">기본배송지</label>
+            </div>
+          </div>
+
+          <!-- 2.주소 입력 필드 -->
+          <div class="address">
+            <input type="number" class="text-field" id="postal-code" />
+            <button class="btn sm lightgray-outline">우편번호찾기</button>
+            <input type="text" id="address-base" class="text-field" />
+            <input type="text" id="address-detail" class="text-field" placeholder="상세주소를 입력하세요" />
+          </div>
+
+          <!-- 3.체크박스 -->
+          <div class="checkbox"><input type="checkbox" checked="" id="check1" /><label for="check1">기본배송지정보에 반영합니다.</label></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
