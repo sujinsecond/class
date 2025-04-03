@@ -46,15 +46,38 @@
     }
   }
 }
-
+/* 
 .pipe-type3 {
   --width: 0.1rem;
   --height: 1.2rem;
   --marginX: 1.2rem;
 
-  border-bottom: 0.1rem solid var(--gray200);
+  border-bottom: 0.1rem solid var(--gray400);
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+
+  display: flex;
+  align-items: center;
+  > * {
+    display: flex;
+    align-items: center;
+    + * {
+      &::before {
+        content: '';
+        width: var(--width);
+        height: var(--height);
+        margin-inline: var(--marginX);
+        background: var(--bg);
+      }
+    }
+  }
+} */
+
+.pipe-type3 {
+  --width: 0.1rem;
+  --height: 1.2rem;
+  --marginX: 1.2rem;
+  --bg: var(--gray400);
 
   display: flex;
   align-items: center;
