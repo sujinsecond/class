@@ -34,3 +34,28 @@ table {
     font-size: 1.4rem;
   }
 }
+
+.table-type3 {
+  th,
+  td {
+    padding-block: 1.6rem;
+  }
+  th {
+    font-size: 1.6em;
+    font-weight: 800;
+  }
+  td {
+    font-size: 1.6em;
+    font-weight: 400;
+    text-align: center;
+  }
+  td:first-child {
+    color: red;
+    vertical-align: top;
+    text-align: left;
+  }
+  thead,
+  caption {
+    display: none;
+  }
+}
